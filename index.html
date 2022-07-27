@@ -26,10 +26,44 @@
 
         <div class="form-container">
             <h3>Let`s do this!</h3>
-            <form action="#">
-                
+            <form id="myform" action="" method="get">
+                <div class="left">
+                    <div>
+                        <label for="first_name">First name:</label>
+                        <input type="text" name="first_name" id="first_name">
+                    </div>
+                    <div>
+                        <label for="mail">Email:</label>
+                        <input type="email" name="email" id="mail">
+                    </div>
+                    <div>
+                        <label for="psswd">Password:</label>
+                        <input type="password" name="password" id="psswd">
+                    </div>
+                </div>
+
+                <div class="right">
+                    <div>
+                        <label for="last_name">Last name:</label>
+                        <input type="text" name="last_name" id="last_name">
+                    </div>
+                    <div>
+                        <label for="number">Phone number:</label>
+                        <input type="text" name="phone_number" id="number" maxlength="9" minlength="8">
+                    </div>
+                    <div>
+                        <label for="psswd-confirm">Confirm password:</label>
+                        <input type="password" name="password_confirm" id="psswd-confirm">
+                    </div>
+                </div>
+
             </form>
+
         </div>
+        <div class="options">
+            <button type='submit'>Create Account</button>
+        </div>
+
     </div>
     
 </body>
