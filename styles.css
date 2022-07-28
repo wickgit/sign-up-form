@@ -135,7 +135,7 @@ input:invalid {
 
 input:valid {
     box-shadow: 0 4px #415449;
-    /* border: 1px solid #415449; */
+    border: 1px solid #415449;
 }
 
 input:focus {
