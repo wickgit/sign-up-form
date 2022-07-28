@@ -18,6 +18,13 @@ body {
 .image {
     position: relative;
     display: flex;
+    width: 40vw;
+}
+
+img {
+    max-height:100%; 
+    max-width:100%;
+    object-fit: cover;
 }
 
 .image > div {
@@ -47,7 +54,8 @@ h3 {
     
     background-color: #121212;
     color:rgb(189, 188, 188);
-    
+
+    width: 60vw;
 
 }
 
