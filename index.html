@@ -11,8 +11,11 @@
 <body>
     <div class="image">
         <img src="images/background.jpg" alt="Background">
-        <div>    
-            <h2>Northas</h2>
+        <div>
+            <div>
+                <img src="images/spartan.png" width="40px" height="40px" alt="warrior">    
+                <h2>Northas</h2>
+            </div>
         </div> 
     </div>
     <div class="wrapper">
@@ -24,45 +27,49 @@
             <p>You <i>know</i>  you want to.</p>
         </div>
 
-        <div class="form-container">
-            <h3>Let`s do this!</h3>
-            <form id="myform" action="" method="get">
-                <div class="left">
-                    <div>
-                        <label for="first_name">First name:</label>
-                        <input type="text" name="first_name" id="first_name">
+        <form id="myform" action="" method="get">
+            <div class="form-container">
+                <h3>Let`s do this!</h3>
+                <div class="form-wrapper">
+                    <div class="left">
+                        <div>
+                            <label for="first_name">First name:</label>
+                            <input type="text" name="first_name" id="first_name">
+                        </div>
+                        <div>
+                            <label for="mail">Email:</label>
+                            <input type="email" name="email" id="mail">
+                        </div>
+                        <div>
+                            <label for="psswd">Password:</label>
+                            <input type="password" name="password" id="psswd">
+                        </div>
                     </div>
-                    <div>
-                        <label for="mail">Email:</label>
-                        <input type="email" name="email" id="mail">
-                    </div>
-                    <div>
-                        <label for="psswd">Password:</label>
-                        <input type="password" name="password" id="psswd">
+
+                    <div class="right">
+                        <div>
+                            <label for="last_name">Last name:</label>
+                            <input type="text" name="last_name" id="last_name">
+                        </div>
+                        <div>
+                            <label for="number">Phone number:</label>
+                            <input type="text" name="phone_number" id="number" maxlength="9" minlength="8">
+                        </div>
+                        <div>
+                            <label for="psswd-confirm">Confirm password:</label>
+                            <input type="password" name="password_confirm" id="psswd-confirm">
+                        </div>
                     </div>
                 </div>
+        
+            </div>
+            <div class="options">
+                <button type='submit'>Create Account</button>
+                <p>Already have an account? <a href="index.html">Log in</a></p>
+            </div> 
+        </form>
 
-                <div class="right">
-                    <div>
-                        <label for="last_name">Last name:</label>
-                        <input type="text" name="last_name" id="last_name">
-                    </div>
-                    <div>
-                        <label for="number">Phone number:</label>
-                        <input type="text" name="phone_number" id="number" maxlength="9" minlength="8">
-                    </div>
-                    <div>
-                        <label for="psswd-confirm">Confirm password:</label>
-                        <input type="password" name="password_confirm" id="psswd-confirm">
-                    </div>
-                </div>
 
-            </form>
-
-        </div>
-        <div class="options">
-            <button type='submit'>Create Account</button>
-        </div>
 
     </div>
     

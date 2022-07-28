@@ -29,17 +29,26 @@ img {
 
 .image > div {
     position: absolute;
+    display: flex;
+    justify-content: center;
     top: 160px;
     width: 100%;
     background-color: rgba(0,0,0,0.5);
     padding: 24px 0;
 }
 
+.image > div > div {
+    display: flex;
+    gap: 10px;
+}
+
 h2 {
     font-size: 2rem;
     color:white;
     text-align: center;
-    font-weight: normal;
+    font-weight: bold;
+    text-shadow: 2px 1px black;
+    /* line-height: 100%; */
 }
 
 h3 {
@@ -66,7 +75,7 @@ h3 {
     padding: 40px;
 }
 
-p {
+ .paragraphs > p {
     width: 100%;
     margin-bottom: 20px;
     font-size: 1.4rem;
@@ -76,10 +85,16 @@ p {
     display: flex;
     flex-direction: column;
     background-color: #171717;
+    width: 100%;
     padding: 20px 40px;
 }
 
 form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-wrapper {
     display: flex;
     gap: 50px;
 }
@@ -99,7 +114,7 @@ form {
 }
 
 label {
-    padding: 5px 0 ;
+    padding: 5px 0;
 }
 
 input {
@@ -119,6 +134,37 @@ input:invalid {
 }
 
 input:valid {
-    box-shadow: 0 3px #415449;
-    border: 1px solid #415449;
+    box-shadow: 0 4px #415449;
+    /* border: 1px solid #415449; */
+}
+
+input:focus {
+    border: 1px 1px gold;
+}
+
+.options {
+    padding-top: 20px;
+    padding-left: 40px;
+}
+
+.options > p {
+    margin-left: 10px;
+}
+
+a {
+    color:rgb(73, 94, 94);
+    font-weight: bold;
+}
+
+button[type='submit'] {
+    padding:  14px 24px;
+    background-color: #415449;
+    color:rgb(211, 211, 211);
+    border-radius: 10px;
+    border: 2px solid black;
+    font-size: 1.15em;
+    font-weight: bold;
+    text-shadow: 1px 1px black;
+    margin: 8px;
+    cursor: pointer;
 }
